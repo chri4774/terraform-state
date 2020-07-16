@@ -1,0 +1,1 @@
+storageaccountname=gsyiacsbx01
