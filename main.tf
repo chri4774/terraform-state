@@ -16,7 +16,7 @@ resource "azurerm_resource_group" "this" {
     }
 }
 
-resource "azurerm_storage_account" "example" {
+resource "azurerm_storage_account" "this" {
   name                     = var.storageaccountname
   resource_group_name      = var.ressourcegroup
   location                 = var.location
@@ -28,8 +28,8 @@ resource "azurerm_storage_account" "example" {
   }
 }
 
-resource "azurerm_storage_container" "example" {
+resource "azurerm_storage_container" "this" {
   name                  = "tfstate"
-  storage_account_name  = azurerm_storage_account.example.name
+  storage_account_name  = azurerm_storage_account.this.name
   container_access_type = "private"
 }
