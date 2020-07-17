@@ -1,1 +1,1 @@
-storageaccountname=gsyiacsbx01
+storageaccountname = "gsyiactfstatesbx01"
